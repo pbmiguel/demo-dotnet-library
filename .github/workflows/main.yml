@@ -25,6 +25,11 @@ jobs:
         dotnet reportgenerator "-reports:TestResults/coverage.cobertura.xml" "-targetdir:TestResults/txt" -reporttypes:TextSummary;
         value=$(<TestResults/txt/Summary.txt)
         echo "$value"
+        jq -nc '{"body": $value}' | \
+        curl -sL  -X POST -d @- \
+          -H "Content-Type: application/json" \
+          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          "https://api.github.com/repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA/comments"
     - name: Archive code coverage results
       uses: actions/upload-artifact@v2
       with:
