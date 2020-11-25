@@ -22,6 +22,9 @@ jobs:
         dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude="[xunit*]\*" /p:CoverletOutput="./TestResults/"
         cd XUnit.Coverlet.Collector
         dotnet reportgenerator "-reports:TestResults/coverage.cobertura.xml" "-targetdir:TestResults/html" -reporttypes:HTML;
+        dotnet reportgenerator "-reports:TestResults/coverage.cobertura.xml" "-targetdir:TestResults/txt" -reporttypes:TextSummary;
+        value=$(<TestResults/txt/Summary.txt)
+        echo "$value"
     - name: Archive code coverage results
       uses: actions/upload-artifact@v2
       with:
@@ -33,7 +36,7 @@ jobs:
         dotnet-format --check || exit 1
     - name: Add commit comment
       run: |
-        jq -nc '{"body": "test comment"}' | \
+        jq -nc '{"body": $value}' | \
         curl -sL  -X POST -d @- \
           -H "Content-Type: application/json" \
           -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
