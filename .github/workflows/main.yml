@@ -22,6 +22,11 @@ jobs:
         dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude="[xunit*]\*" /p:CoverletOutput="./TestResults/"
         cd XUnit.Coverlet.Collector
         dotnet reportgenerator "-reports:TestResults/coverage.cobertura.xml" "-targetdir:TestResults/html" -reporttypes:HTML;
+    - name: Archive code coverage results
+      uses: actions/upload-artifact@v2
+      with:
+        name: code-coverage-report
+        path: XUnit.Coverlet.Collector/TestResults/html/index.htm
     - name: dotnet-format
       run: |
         dotnet tool install -g dotnet-format
