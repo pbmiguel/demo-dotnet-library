@@ -1,0 +1,9 @@
+/Users/paulobarbosa/Documents/template-dotnet-library/Numbers/bin/Debug/netstandard2.0/Numbers.deps.json
+/Users/paulobarbosa/Documents/template-dotnet-library/Numbers/bin/Debug/netstandard2.0/Numbers.dll
+/Users/paulobarbosa/Documents/template-dotnet-library/Numbers/bin/Debug/netstandard2.0/Numbers.pdb
+/Users/paulobarbosa/Documents/template-dotnet-library/Numbers/obj/Debug/netstandard2.0/Numbers.csprojAssemblyReference.cache
+/Users/paulobarbosa/Documents/template-dotnet-library/Numbers/obj/Debug/netstandard2.0/Numbers.AssemblyInfoInputs.cache
+/Users/paulobarbosa/Documents/template-dotnet-library/Numbers/obj/Debug/netstandard2.0/Numbers.AssemblyInfo.cs
+/Users/paulobarbosa/Documents/template-dotnet-library/Numbers/obj/Debug/netstandard2.0/Numbers.csproj.CoreCompileInputs.cache
+/Users/paulobarbosa/Documents/template-dotnet-library/Numbers/obj/Debug/netstandard2.0/Numbers.dll
+/Users/paulobarbosa/Documents/template-dotnet-library/Numbers/obj/Debug/netstandard2.0/Numbers.pdb
