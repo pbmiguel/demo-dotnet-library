@@ -24,7 +24,7 @@ jobs:
         dotnet reportgenerator "-reports:TestResults/coverage.cobertura.xml" "-targetdir:TestResults/html" -reporttypes:HTML;
         dotnet reportgenerator "-reports:TestResults/coverage.cobertura.xml" "-targetdir:TestResults/txt" -reporttypes:TextSummary;
         value=$(<TestResults/txt/Summary.txt)
-        jq -nc '{"body": '$value'}' | \
+        jq -nc --arg value "$value" '{"body": "$value"}' | \
         curl -sL  -X POST -d @- \
           -H "Content-Type: application/json" \
           -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
