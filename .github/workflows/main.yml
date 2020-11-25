@@ -25,7 +25,7 @@ jobs:
         dotnet reportgenerator "-reports:TestResults/coverage.cobertura.xml" "-targetdir:TestResults/txt" -reporttypes:TextSummary;
         value=$(<TestResults/txt/Summary.txt)
         echo "$value"
-        jq -nc '{"body": $value}' | \
+        jq --arg value $value -nc '{"body": "$value"}' | \
         curl -sL  -X POST -d @- \
           -H "Content-Type: application/json" \
           -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
@@ -39,10 +39,3 @@ jobs:
       run: |
         dotnet tool install -g dotnet-format
         dotnet-format --check || exit 1
-    - name: Add commit comment
-      run: |
-        jq -nc '{"body": $value}' | \
-        curl -sL  -X POST -d @- \
-          -H "Content-Type: application/json" \
-          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-          "https://api.github.com/repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA/comments"
