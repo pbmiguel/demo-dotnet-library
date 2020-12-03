@@ -31,6 +31,12 @@ jobs:
           "https://api.github.com/repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA/comments"
           cover=$(grep -o -P 'Line coverage:.*[\d]\.' TestResults/txt/Summary.txt)
           echo $cover | grep -o -P '\d+'
+          if [ $value -ge 100 ]; then
+            exit 0
+          else
+            echo "code coverage has decreased bellow threshold"
+            exit 1
+          fi
     - name: Archive code coverage results
       uses: actions/upload-artifact@v2
       with:
