@@ -30,8 +30,8 @@ jobs:
           -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
           "https://api.github.com/repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA/comments"
           cover=$(grep -o -P 'Line coverage:.*[\d]\.' TestResults/txt/Summary.txt)
-          echo $cover | grep -o -P '\d+'
-          if [ $value -ge 100 ]; then
+          coverageValue=$(echo $cover | grep -o -P '\d+')
+          if [ $coverageValue -ge 100 ]; then
             exit 0
           else
             echo "code coverage has decreased bellow threshold"
