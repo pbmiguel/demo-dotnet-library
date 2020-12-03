@@ -29,8 +29,8 @@ jobs:
           -H "Content-Type: application/json" \
           -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
           "https://api.github.com/repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA/comments"
-          cover=$(echo $value | grep -o -P '\[.*?\.')
-          echo $cover | grep -o -m 1 -P '(\d+)'
+          cover=$(grep -o -P 'Line coverage:.*[\d]\.' TestResults/txt/Summary.txt)
+          echo $cover | grep -o -P '\d+'
     - name: Archive code coverage results
       uses: actions/upload-artifact@v2
       with:
