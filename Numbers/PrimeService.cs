@@ -16,7 +16,13 @@
                     return false;
                 }
             }
+
             return true;
+        }
+
+        public bool IsOdd(int candidate)
+        {
+            return candidate % 2 != 0;
         }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/paulobarbosa/Documents/template-dotnet-library/XUnit.Coverlet.Collector/XUnit.Coverlet.Collector.csproj": {}
+    "/Users/paulobarbosa/Documents/demo-dotnet-library/XUnit.Coverlet.Collector/XUnit.Coverlet.Collector.csproj": {}
   },
   "projects": {
-    "/Users/paulobarbosa/Documents/template-dotnet-library/Numbers/Numbers.csproj": {
+    "/Users/paulobarbosa/Documents/demo-dotnet-library/Numbers/Numbers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/paulobarbosa/Documents/template-dotnet-library/Numbers/Numbers.csproj",
+        "projectUniqueName": "/Users/paulobarbosa/Documents/demo-dotnet-library/Numbers/Numbers.csproj",
         "projectName": "Numbers",
-        "projectPath": "/Users/paulobarbosa/Documents/template-dotnet-library/Numbers/Numbers.csproj",
+        "projectPath": "/Users/paulobarbosa/Documents/demo-dotnet-library/Numbers/Numbers.csproj",
         "packagesPath": "/Users/paulobarbosa/.nuget/packages/",
-        "outputPath": "/Users/paulobarbosa/Documents/template-dotnet-library/Numbers/obj/",
+        "outputPath": "/Users/paulobarbosa/Documents/demo-dotnet-library/Numbers/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/paulobarbosa/.nuget/NuGet/NuGet.Config"
@@ -36,6 +36,12 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "JetBrains.dotCover.CommandLineTools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2020.3.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -57,14 +63,14 @@
         }
       }
     },
-    "/Users/paulobarbosa/Documents/template-dotnet-library/XUnit.Coverlet.Collector/XUnit.Coverlet.Collector.csproj": {
+    "/Users/paulobarbosa/Documents/demo-dotnet-library/XUnit.Coverlet.Collector/XUnit.Coverlet.Collector.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/paulobarbosa/Documents/template-dotnet-library/XUnit.Coverlet.Collector/XUnit.Coverlet.Collector.csproj",
+        "projectUniqueName": "/Users/paulobarbosa/Documents/demo-dotnet-library/XUnit.Coverlet.Collector/XUnit.Coverlet.Collector.csproj",
         "projectName": "XUnit.Coverlet.Collector",
-        "projectPath": "/Users/paulobarbosa/Documents/template-dotnet-library/XUnit.Coverlet.Collector/XUnit.Coverlet.Collector.csproj",
+        "projectPath": "/Users/paulobarbosa/Documents/demo-dotnet-library/XUnit.Coverlet.Collector/XUnit.Coverlet.Collector.csproj",
         "packagesPath": "/Users/paulobarbosa/.nuget/packages/",
-        "outputPath": "/Users/paulobarbosa/Documents/template-dotnet-library/XUnit.Coverlet.Collector/obj/",
+        "outputPath": "/Users/paulobarbosa/Documents/demo-dotnet-library/XUnit.Coverlet.Collector/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/paulobarbosa/.nuget/NuGet/NuGet.Config"
@@ -78,8 +84,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/Users/paulobarbosa/Documents/template-dotnet-library/Numbers/Numbers.csproj": {
-                "projectPath": "/Users/paulobarbosa/Documents/template-dotnet-library/Numbers/Numbers.csproj"
+              "/Users/paulobarbosa/Documents/demo-dotnet-library/Numbers/Numbers.csproj": {
+                "projectPath": "/Users/paulobarbosa/Documents/demo-dotnet-library/Numbers/Numbers.csproj"
               }
             }
           }
@@ -93,6 +99,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "JetBrains.dotCover.CommandLineTools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2020.3.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.5.0, )"

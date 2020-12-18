@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/paulobarbosa/Documents/template-dotnet-library/Numbers/Numbers.csproj",
+    "projectUniqueName": "/Users/paulobarbosa/Documents/demo-dotnet-library/Numbers/Numbers.csproj",
     "projectName": "Numbers",
-    "projectPath": "/Users/paulobarbosa/Documents/template-dotnet-library/Numbers/Numbers.csproj",
-    "outputPath": "/Users/paulobarbosa/Documents/template-dotnet-library/Numbers/obj/",
+    "projectPath": "/Users/paulobarbosa/Documents/demo-dotnet-library/Numbers/Numbers.csproj",
+    "outputPath": "/Users/paulobarbosa/Documents/demo-dotnet-library/Numbers/obj/",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netstandard2.0"
@@ -26,6 +26,12 @@
   "frameworks": {
     "netstandard2.0": {
       "dependencies": {
+        "JetBrains.dotCover.CommandLineTools": {
+          "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2020.3.0, )"
+        },
         "NETStandard.Library": {
           "suppressParent": "All",
           "target": "Package",

@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/paulobarbosa/Documents/template-dotnet-library/XUnit.Coverlet.Collector/XUnit.Coverlet.Collector.csproj",
+    "projectUniqueName": "/Users/paulobarbosa/Documents/demo-dotnet-library/XUnit.Coverlet.Collector/XUnit.Coverlet.Collector.csproj",
     "projectName": "XUnit.Coverlet.Collector",
-    "projectPath": "/Users/paulobarbosa/Documents/template-dotnet-library/XUnit.Coverlet.Collector/XUnit.Coverlet.Collector.csproj",
-    "outputPath": "/Users/paulobarbosa/Documents/template-dotnet-library/XUnit.Coverlet.Collector/obj/",
+    "projectPath": "/Users/paulobarbosa/Documents/demo-dotnet-library/XUnit.Coverlet.Collector/XUnit.Coverlet.Collector.csproj",
+    "outputPath": "/Users/paulobarbosa/Documents/demo-dotnet-library/XUnit.Coverlet.Collector/obj/",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"
@@ -15,8 +15,8 @@
     "frameworks": {
       "netcoreapp3.1": {
         "projectReferences": {
-          "/Users/paulobarbosa/Documents/template-dotnet-library/Numbers/Numbers.csproj": {
-            "projectPath": "/Users/paulobarbosa/Documents/template-dotnet-library/Numbers/Numbers.csproj"
+          "/Users/paulobarbosa/Documents/demo-dotnet-library/Numbers/Numbers.csproj": {
+            "projectPath": "/Users/paulobarbosa/Documents/demo-dotnet-library/Numbers/Numbers.csproj"
           }
         }
       }
@@ -30,6 +30,12 @@
   "frameworks": {
     "netcoreapp3.1": {
       "dependencies": {
+        "JetBrains.dotCover.CommandLineTools": {
+          "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2020.3.0, )"
+        },
         "Microsoft.NET.Test.Sdk": {
           "target": "Package",
           "version": "[16.5.0, )"

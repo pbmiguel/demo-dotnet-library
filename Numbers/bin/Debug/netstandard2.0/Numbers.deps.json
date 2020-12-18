@@ -9,12 +9,14 @@
     ".NETStandard,Version=v2.0/": {
       "Numbers/1.0.0": {
         "dependencies": {
+          "JetBrains.dotCover.CommandLineTools": "2020.3.0",
           "NETStandard.Library": "2.0.3"
         },
         "runtime": {
           "Numbers.dll": {}
         }
       },
+      "JetBrains.dotCover.CommandLineTools/2020.3.0": {},
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "NETStandard.Library/2.0.3": {
         "dependencies": {
@@ -28,6 +30,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "JetBrains.dotCover.CommandLineTools/2020.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-34P2sf8Q0/JbqAvMFqSb8/im18wVeRvnOCpAVrkqOQ1NmYm+pNHmb0cT2Sye1y317t2w0DwdsVCFzeUmvQu/gw==",
+      "path": "jetbrains.dotcover.commandlinetools/2020.3.0",
+      "hashPath": "jetbrains.dotcover.commandlinetools.2020.3.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

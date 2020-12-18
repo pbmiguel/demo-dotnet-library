@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "/HisXAvETeX3mj4dR4chl/vbiT2GHV/Gu32v6tNWqdkV32dYvl98oVzeQRIT4Lz9JLigd1u0flM7yP7aBi7hhQ==",
+  "dgSpecHash": "4IhfKoqHL4WCRnBQZOKYYao15EDOX3UHH87El4mAMN5Lg158cVR4d2RVEz94omPHNvPzwfpuX3+dVZ0ptVUAHQ==",
   "success": true,
-  "projectFilePath": "/Users/paulobarbosa/Documents/template-dotnet-library/XUnit.Coverlet.Collector/XUnit.Coverlet.Collector.csproj",
+  "projectFilePath": "/Users/paulobarbosa/Documents/demo-dotnet-library/XUnit.Coverlet.Collector/XUnit.Coverlet.Collector.csproj",
   "expectedPackageFiles": [
     "/Users/paulobarbosa/.nuget/packages/coverlet.collector/1.2.0/coverlet.collector.1.2.0.nupkg.sha512",
+    "/Users/paulobarbosa/.nuget/packages/jetbrains.dotcover.commandlinetools/2020.3.0/jetbrains.dotcover.commandlinetools.2020.3.0.nupkg.sha512",
     "/Users/paulobarbosa/.nuget/packages/microsoft.codecoverage/16.5.0/microsoft.codecoverage.16.5.0.nupkg.sha512",
     "/Users/paulobarbosa/.nuget/packages/microsoft.csharp/4.0.1/microsoft.csharp.4.0.1.nupkg.sha512",
     "/Users/paulobarbosa/.nuget/packages/microsoft.net.test.sdk/16.5.0/microsoft.net.test.sdk.16.5.0.nupkg.sha512",

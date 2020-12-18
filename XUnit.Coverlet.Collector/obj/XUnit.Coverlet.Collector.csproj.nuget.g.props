@@ -7,7 +7,7 @@
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/paulobarbosa/.nuget/packages/</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/paulobarbosa/.nuget/packages/</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.6.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.5.0</NuGetToolVersion>
   </PropertyGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -22,5 +22,6 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">/Users/paulobarbosa/.nuget/packages/newtonsoft.json/9.0.1</PkgNewtonsoft_Json>
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">/Users/paulobarbosa/.nuget/packages/xunit.analyzers/0.10.0</Pkgxunit_analyzers>
+    <PkgJetBrains_dotCover_CommandLineTools Condition=" '$(PkgJetBrains_dotCover_CommandLineTools)' == '' ">/Users/paulobarbosa/.nuget/packages/jetbrains.dotcover.commandlinetools/2020.3.0</PkgJetBrains_dotCover_CommandLineTools>
   </PropertyGroup>
 </Project>
