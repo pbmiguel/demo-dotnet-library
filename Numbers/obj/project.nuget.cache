@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "iSTcvepN+Iq/ET05E5Z7R577bnRKZsrdma3QmlsDpam1cwjBgYygyOXvshZzkelKyHEblwQLBzJr2N/6TWAFeQ==",
+  "success": true,
+  "projectFilePath": "/Users/paulobarbosa/Documents/demo-dotnet-library/Numbers/Numbers.csproj",
+  "expectedPackageFiles": [
+    "/Users/paulobarbosa/.nuget/packages/jetbrains.dotcover.commandlinetools/2020.3.0/jetbrains.dotcover.commandlinetools.2020.3.0.nupkg.sha512",
+    "/Users/paulobarbosa/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/paulobarbosa/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
