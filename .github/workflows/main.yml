@@ -19,7 +19,7 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Testing
       run: |
-        dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude="[xunit*]\*" /p:CoverletOutput="./TestResults/"
+        dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude="[xunit*]\*" /p:CoverletOutput="./TestResults/" /p:Threshold=100
         cd XUnit.Coverlet.Collector
         dotnet reportgenerator "-reports:TestResults/coverage.cobertura.xml" "-targetdir:TestResults/html" -reporttypes:HTML;
         dotnet reportgenerator "-reports:TestResults/coverage.cobertura.xml" "-targetdir:TestResults/txt" -reporttypes:TextSummary;
